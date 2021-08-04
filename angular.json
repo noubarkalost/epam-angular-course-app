@@ -98,6 +98,14 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://noubarkalost.github.io/epam-angular-course-app/",
+            "name": "epam-angular-course-app",
+            "email": "noubar.kaloust@gmail.com"
+          }
         }
       }
     }
