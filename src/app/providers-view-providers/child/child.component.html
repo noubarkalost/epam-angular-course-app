@@ -2,14 +2,14 @@
 <p>Emoji from WatermelonService: {{ watermelon.watermelonEmoji }}</p>
 <p>Emoji from LionService: {{ lion.lionEmoji }}</p>
 <br>
-
+<div class="container">
   <h3><strong>Content projection </strong> </h3>
   <p>The following is coming from content. It doesn't get to see the bear because the bear is declared inside the view only.</p>
-<br>
-
   <ng-content></ng-content>
 
-<br>
+  <br>
+
+</div>
 
 
 <h3><strong>Inside the view</strong></h3>
