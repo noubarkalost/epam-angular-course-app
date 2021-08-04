@@ -2,7 +2,7 @@
 <p>Emoji from WatermelonService: {{ watermelon.watermelonEmoji }}</p>
 <p>Emoji from LionService: {{ lion.lionEmoji }}</p>
 <br>
-<div class="container">
+<div class="border">
   <h3><strong>Content projection </strong> </h3>
   <p>The following is coming from content. It doesn't get to see the bear because the bear is declared inside the view only.</p>
   <ng-content></ng-content>
@@ -11,10 +11,11 @@
 
 </div>
 
-
+<div class="content">
 <h3><strong>Inside the view</strong></h3>
 <p>The following is inside the view so it does see the bear:</p>
 <app-inspector></app-inspector>
+</div>
 <hr>
 
 
