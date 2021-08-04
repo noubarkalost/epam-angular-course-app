@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Optional, Self} from '@angular/core';
+import {OrangeService} from "../orange.service";
 
 @Component({
   selector: 'app-self-no-data',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SelfNoDataComponent implements OnInit {
 
-  constructor() { }
+  constructor(@Self() @Optional() public orange?: OrangeService) { }
 
   ngOnInit(): void {
   }

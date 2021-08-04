@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {WatermelonService} from "./watermelon.service";
+import {OrangeService} from "./orange.service";
+
 
 @Component({
   selector: 'app-resolution-modifiers',
@@ -7,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResolutionModifiersComponent implements OnInit {
 
-  constructor() { }
+  constructor(public watermelon: WatermelonService, public orange: OrangeService) { }
 
   ngOnInit(): void {
   }

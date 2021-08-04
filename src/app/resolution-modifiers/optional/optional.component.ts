@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Optional} from '@angular/core';
+import {OptionalService} from "../optional.service";
 
 @Component({
   selector: 'app-optional',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OptionalComponent implements OnInit {
 
-  constructor() { }
+  constructor(@Optional() public optional?: OptionalService) { }
 
   ngOnInit(): void {
   }

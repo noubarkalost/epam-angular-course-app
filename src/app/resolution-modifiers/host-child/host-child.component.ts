@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {WatermelonService} from "../watermelon.service";
+
 
 @Component({
   selector: 'app-host-child',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HostChildComponent implements OnInit {
 
-  constructor() { }
+  constructor(public watermelon: WatermelonService) { }
 
   ngOnInit(): void {
   }

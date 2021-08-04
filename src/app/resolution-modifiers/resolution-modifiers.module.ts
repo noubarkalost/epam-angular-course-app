@@ -24,6 +24,16 @@ import { SkipSelfComponent } from './skip-self/skip-self.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports :[
+    OptionalComponent,
+    HostComponent,
+    HostChildComponent,
+    HostParentComponent,
+    SelfComponent,
+    SelfNoDataComponent,
+    ResolutionModifiersComponent,
+    SkipSelfComponent
   ]
 })
 export class ResolutionModifiersModule { }
