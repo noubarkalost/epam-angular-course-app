@@ -14,6 +14,10 @@ import { ProvidersViewProvidersComponent } from './providers-view-providers.comp
   ],
   imports: [
     CommonModule
+  ],exports:[
+    ChildComponent,
+    InspectorComponent,
+    ProvidersViewProvidersComponent,
   ]
 })
 export class ProvidersViewProvidersModule { }
