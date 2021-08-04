@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {WatermelonService} from "../watermelon.service";
+import {LionService} from "../lion.service";
 
 @Component({
   selector: 'app-inspector',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InspectorComponent implements OnInit {
 
-  constructor() { }
+  constructor(public watermelon: WatermelonService, public lion: LionService) { }
 
   ngOnInit(): void {
   }
